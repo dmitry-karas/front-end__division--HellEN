@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./../images/hero/hero-mob.png":[["hero-mob.44442330.png","images/hero/hero-mob.png"],"images/hero/hero-mob.png"],"./../images/hero/hero-bg-mob.png":[["hero-bg-mob.0bbf9343.png","images/hero/hero-bg-mob.png"],"images/hero/hero-bg-mob.png"],"./../images/hero/hero-mob@2x.png":[["hero-mob@2x.8e50927b.png","images/hero/hero-mob@2x.png"],"images/hero/hero-mob@2x.png"],"./../images/hero/hero-tab.png":[["hero-tab.43b78b16.png","images/hero/hero-tab.png"],"images/hero/hero-tab.png"],"./../images/hero/hero-bg-desk.png":[["hero-bg-desk.c2f5aa32.png","images/hero/hero-bg-desk.png"],"images/hero/hero-bg-desk.png"],"./../images/hero/hero-tab@2x.png":[["hero-tab@2x.cc819e2c.png","images/hero/hero-tab@2x.png"],"images/hero/hero-tab@2x.png"],"./../images/hero/hero-desk.png":[["hero-desk.1879606f.png","images/hero/hero-desk.png"],"images/hero/hero-desk.png"],"./../images/hero/hero-desk@2x.png":[["hero-desk@2x.c0e28438.png","images/hero/hero-desk@2x.png"],"images/hero/hero-desk@2x.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52643" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53238" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
