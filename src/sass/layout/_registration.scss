@@ -1,0 +1,88 @@
+.overlay {
+    max-width: 320px;
+    height: 507px;
+    margin-left: auto;
+    margin-right: auto; 
+    
+    background-image: url(../images/registration/registration-bg-mob.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 320px 507px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+           screen and (min-resolution: 192dpi),
+           screen and (min-resolution: 2dppx){
+        .overlay {
+            background-image: url(../images/registration/registration-bg-mob@2x.png);
+        }
+    }
+
+    background-color: var(--secondary-bg-color);
+}
+
+.form {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+
+    .form & {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.360;
+    font-style: normal;
+
+    color: var(--secondary-title-color);
+    }
+    
+    &-accent {
+        color: var(--accent-color);
+    }
+}
+
+.form-deskription {
+    margin-bottom: 30px;
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.219;
+    letter-spacing: 0.08em;
+    word-spacing: 0.03em;
+    font-style: normal;
+
+    color: var(--secondary-title-color);
+}
+
+.input {
+    &:first-of-type {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.form-input {
+    width: 100%;
+    padding: 15px 48px;
+    border:1px solid var(--secondary-title-color);
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.219;
+    letter-spacing: 0.08em;
+    font-style: normal;
+
+    color: var(--secondary-title-color);
+    background: transparent;
+}
+
+.registration .button {
+    display: block;
+    /*min-width: 260px;*/
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
