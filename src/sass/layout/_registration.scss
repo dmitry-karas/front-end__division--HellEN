@@ -90,6 +90,7 @@
     width: 100%;
     padding: 15px 48px;
     border:1px solid var(--secondary-title-color);
+    outline: none;
 
     font-weight: 600;
     font-size: 14px;
@@ -99,6 +100,16 @@
 
     color: var(--secondary-title-color);
     background: transparent;
+    &::placeholder {
+        color: var(--secondary-title-color);
+    }
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        &::placeholder {
+            color: var(--accent-color);
+        }
+    }
 }
 
 .registration .button {
