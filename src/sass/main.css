@@ -699,14 +699,13 @@ body {
 }
 
 @media screen and (min-width: 1344px) {
-  .problems-title-image {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
+  .problems {
     width: 455px;
     height: 472px;
-    background-image: url("../images/problems/fire.svg");
+    background-image: url("../images/icons/problems-bg-campfire .svg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
   }
 }
 
