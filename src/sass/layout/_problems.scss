@@ -33,12 +33,30 @@ body {
   &--orange {
     color: var(--accent-color);
   }
+}
 
-  @media screen and (min-width:320px){
+.problems-title-mobile{
+  @media screen and (max-width:767px){
     &--block {
       display: block;
     }
   }
+}
+
+.problems-title-tablet{
+  @media screen and (min-width:768px){
+    &--block {
+      display: block;
+    }
+  }
+}
+
+.problems-content {
+  @media screen and (min-width:768px){
+    &--block {
+      display: block;
+    }
+}
 }
 
 .problems-title-image {
@@ -109,6 +127,8 @@ body {
     font-style: normal;
     font-weight: bold;
     letter-spacing: 0.08em;
+    font-size: 14px;
+    line-height: 20px;
     color: var(--primary-title-color);
 
     @media screen and (min-width: 768px) {
@@ -122,8 +142,6 @@ body {
     font-size: 14px;
     line-height: 1.71;
     margin-bottom: 10px;
-
-
   }
 
   &__item::before {
@@ -133,9 +151,10 @@ body {
 
     font-style: normal;
     font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
     letter-spacing: 0.08em;
-    font-size: 20px;
-    line-height: 1.2;
+    
     color: var(--accent-color);
 
     counter-increment: problem-number;
