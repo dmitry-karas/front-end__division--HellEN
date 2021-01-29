@@ -1,0 +1,155 @@
+body {
+  counter-reset: problem-number;
+}
+
+// :root {
+//   --accent-color: #ff6b09;
+//   --primary-title-color: #111518;
+//   --secondary-title-color: #fff;
+//   --primary-text-color: #b9b9b9;
+//   --secondary-text-color: #3d3d3d;
+//   --primary-bg-color: #fff;
+//   --secondary-bg-color: #111518;
+//   --tertiary-bg-color: #f1f1f1;
+
+//   --timing-function: ease-in-out;
+// }
+
+.problems {
+  position: relative;
+  background-color: var(--secondary-bg-color);
+}
+
+// PROBLEMS TITLE
+.problems-title-container {
+  @media screen and (min-width: 320px) {
+    padding: 51px 20px 366px 0px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 60px 158px 177px 0px;
+  }                                                                                                                                                                                              
+
+  @media screen and (min-width: 1344px) {
+    padding: 100px 631px 282px 0px;
+  }
+}
+
+.problems-title {
+  position: relative;
+  color:var(--secondary-title-color);
+
+  &--orange {
+    color: #ff6b09;
+  }
+
+  &--block {
+    display: block;
+  }
+
+  &--inline {
+    display: inline;
+  }
+}
+
+.problems-title-image {
+  @media screen and (min-width:1344px){
+  position: absolute;
+
+  right: 0px;
+  bottom: 0px;
+
+  width: 455px;
+  height: 472px;
+
+  background-image: url("../images/problems/fire.svg");
+  background-size: cover; 
+  }
+}
+
+// PROBLEMS SET
+.problems-set-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+
+  background: var(--primary-bg-color);
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  @media screen and (min-width: 320px) {
+    width: 280px;
+    top: 38%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 688px;
+    top: 56%;
+  }
+
+  @media screen and (min-width: 1344px) {
+    width: 1314px;
+    top: 62%;
+  }
+}
+
+.problems-set {
+  @media screen and (min-width: 320px) {
+    padding: 20px 14px 20px 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 30px 47px 26px 96px;
+    margin-left: -22px;
+  }
+
+  @media screen and (min-width: 1344px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 70px 112px 62px 114px;
+    margin-left: -40px;
+  }
+
+  &__item {    
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    color: var(--primary-title-color);
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - 22px);
+    }
+
+    @media screen and (min-width: 1344px) {
+      flex-basis: calc(100% / 3 - 40px);
+    }
+
+    font-size: 14px;
+    line-height: 1.71;
+    margin-bottom: 10px;
+
+
+  }
+
+  &__item::before {
+    display: block;
+    content: "";
+    margin-bottom: 5px;
+
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #ff6b09;
+
+    counter-increment: problem-number;
+    content: "— 0" counter(problem-number) " ";
+  }
+}
