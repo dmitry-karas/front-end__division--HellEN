@@ -1,0 +1,142 @@
+.choose {
+  position: absolute;
+  top: 1645px;
+  left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 34px;
+  background: #ffffff;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+.choose-title {
+  /* помістити вище секції на 30px */
+  position: absolute;
+  bottom: 100%;
+  padding-bottom: 30px;
+  margin: 0px;
+  color: rgb(255, 255, 255);
+}
+
+.choose-list {
+  margin: 0;
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+.choose-list-subtitle {
+  color: #ff6b09;
+  margin-bottom: 10px;
+}
+
+.choose-list-text {
+  line-height: 20px;
+}
+
+.choose-list-item {
+  list-style-type: none; /* Убираем маркеры */
+  margin-bottom: 20px;
+  width: 216px;
+  left: 50px;
+  top: 5328px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.428;
+  letter-spacing: 0.08em;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .choose {
+    top: 1213px;
+    left: 0;
+    padding: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+
+  .choose-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 98px;
+    padding-right: 118px;
+  }
+
+  .choose-title {
+    left: 199px;
+  }
+
+  .choose-list-item {
+    margin-bottom: 30px;
+
+    &:nth-child(n + 5) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .choose {
+    top: 1038px;
+    left: 0;
+    padding: 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 84px;
+    padding-right: 82px;
+    margin: 0;
+    width: 1314px;
+  }
+
+  .choose-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .choose-list-item {
+    width: 356px;
+    margin-bottom: 0;
+    margin-left: 40px;
+
+    &:nth-child(n + 4) {
+      margin-top: 32px;
+    }
+
+    &:nth-child(3n + 1) {
+      margin-left: 0;
+    }
+  }
+
+  .choose-title {
+    display: none;
+  }
+
+  .choose-list-text {
+    width: 356px;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.08em;
+  }
+
+  .choose-list-subtitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 164.9%;
+    letter-spacing: 0.08em;
+    padding-top: 1px;
+    margin-bottom: 0;
+  }
+}
