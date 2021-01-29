@@ -28,7 +28,7 @@
      height: 1px;
      background-color:  var(--primary-title-color);
      margin-top: 10px; 
-    //  margin-bottom: 20px;  
+     
     } 
 
     .teacher-list::after {
@@ -37,7 +37,7 @@
         width: 20px;
         height: 2px;
         background-color:  var(--accent-color);
-        // margin-top: 26px;
+        
     }
     .teacher-list-item::before {
         content: "";
@@ -82,7 +82,7 @@
 }
 
 .teacher-subtitle {
-// margin-bottom: 10px;
+ margin-bottom: 10px;
 }
 
 .teacher-description {
