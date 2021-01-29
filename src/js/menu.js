@@ -13,5 +13,14 @@
     mobileMenuRef.classList.toggle("is-open");
     logoRef.classList.toggle("logo-dark-theme");
     document.body.classList.toggle("menu-open");
+
+//  remove classes
+
+    $('.header-menu a').on('click', function () {
+      $('.button-burger').removeClass('is-open');
+    $('.header-menu').removeClass('is-open');
+    $('body').removeClass('menu-open');
+    $('.logo').removeClass('logo-dark-theme');
+      });
   });
 })();
