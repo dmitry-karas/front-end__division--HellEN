@@ -1,6 +1,4 @@
 .overlay {
-    max-width: 320px;
-    height: 507px;
     margin-left: auto;
     margin-right: auto; 
     
@@ -20,8 +18,6 @@
     background-color: var(--secondary-bg-color);
 
     @media screen and (min-width:768px) {
-        max-width: 768px;
-
         background-image: url(../images/registration/registration-bg-tab.png);
         background-size: auto;
         @media screen and (min-device-pixel-ratio: 2),
@@ -34,8 +30,6 @@
     }
 
     @media screen and (min-width:1344px) {
-        max-width: 1344px;
-
         background-image: url(../images/registration/registration-bg-desk.png);
         background-size: 1680px 840px;
         @media screen and (min-device-pixel-ratio: 2),
