@@ -4,6 +4,19 @@
   padding-top: 50px;
   padding-bottom: 537px;
   height: 2050px;
+
+  background-repeat: no-repeat;
+  background-position: calc(50% + 127px) 1473px;
+  background-image: url('../images/program/program-bg-mob.png');
+  background-size: 176px 137px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .program-picture {
+      background-image: url('../images/program/program-bg-mob@2x.png');
+    }
+  }
 }
 
 .program-title {
@@ -13,13 +26,14 @@
   font-weight: 800;
   font-size: 20px;
   line-height: 130%;
+  letter-spacing: 0.08em;
   color: var(--secondary-title-color);
 }
 
 .program-list {
   position: relative;
 
-  margin-left: 94px;
+  margin-left: 74px;
 
   border-left: 1px solid var(--secondary-title-color);
   left: 0px;
@@ -114,27 +128,22 @@
   word-break: break-all;
 }
 
-.program-picture {
-  position: absolute;
-  right: 0;
-  bottom: 426px;
-  width: 108px;
-  height: 137px;
-  background-image: url('../images/program/program-bg-mob.png');
-  background-size: 108px 137px;
+// .program-picture {
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .program-picture {
-      background-image: url('../images/program/program-bg-mob@2x.png');
-    }
-  }
-}
+// }
 
 @media screen and (min-width: 768px) and (max-width: 1343px) {
   .program {
     height: 1355px;
+  }
+  .program-title {
+    text-align: start;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 130%;
+
+    letter-spacing: 0.03em;
   }
 
   .program-semestry {
@@ -179,14 +188,6 @@
     height: 1237px;
     padding-top: 120px;
     padding-bottom: 363px;
-    // position: absolute;
-
-    // right: 825px;
-
-    // bottom: 50px;
-    // width: 670px;
-    // height: 502px;
-    // background-position: -135px 6;
     background-position: calc(50% - 501px) 676px;
     background-repeat: no-repeat;
     background-image: url('../images/program/program-bg-desk.png');
