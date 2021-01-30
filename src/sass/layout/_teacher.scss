@@ -1,35 +1,57 @@
 .teacher {
     padding-top: 40px;
+    padding-bottom: 26px;
 }
 
 .teacher-title {
    
     font-weight: 800;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 1.3;
     letter-spacing: 0.08em;
     color: var(--primary-title-color);
     margin-bottom: 20px;
 
-    @mixin tablet-only {
-        width: 334px;
+    @include tablet-only {
+        font-size: 26px;
+        line-height: 1.308;
+        letter-spacing: 0.03em;
         margin-bottom: 30px;
     }
-    @mixin desktop-only {  
-        width: 866px;
+    @include desktop-only {  
+        font-size: 46px;
+        line-height: 1.304;
+        letter-spacing: 0.03em;
         margin-bottom: 50px;
     }
     }
-    @include mobile-only {
-     .teacher-subtitle::after {
+     
+    .teacher-subtitle {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.08em;
+        color: var(--primary-title-color);
+
+        @include desktop-only {
+            font-size: 30px;
+            line-height: 1.233;
+        }
+    }
+
+    .teacher-subtitle::after {
+     
      display: block;
      content: "";
      width: 100%;
      height: 1px;
-     background-color:  var(--primary-title-color);
-     margin-top: 10px; 
-     
-    } 
+     background-color:  var(--primary-text-color);
+     margin-top: 10px;  
+    
+    @include tablet-only {
+       margin-top: 14px;     
+        }
+    }
 
     .teacher-list::after {
         display: block;
@@ -37,7 +59,12 @@
         width: 20px;
         height: 2px;
         background-color:  var(--accent-color);
-        
+        margin-top: 26px;
+        margin-bottom: 26px;
+
+        @include tablet-only { 
+            margin-top: 24px;
+        }
     }
     .teacher-list-item::before {
         content: "";
@@ -46,7 +73,7 @@
         height: 14px;
     }
 
- }
+
 
 .teacher-wrapper {
     @include tablet-only {
@@ -54,14 +81,12 @@
     } 
     @include desktop-only  {
        display: flex; 
-    }
-    
+    }   
 }
 
 .teacher-list {
     margin-top: 0;
 }
-
 
 .teacher-img {
     object-fit: cover;
@@ -70,24 +95,17 @@
     padding-bottom: 20px;
     padding-left: 0;
 
-    @mixin tablet-only {
+    @include tablet-only {
         width: 244px;
         height: 344px;
+        margin-right: 40px;
         
     } 
-    @mixin desktop-only {  
+    @include desktop-only {  
         width: 530px;
         height: 667px;
+        margin-right: 30px;
     }
-}
-
-.teacher-subtitle {
- margin-bottom: 10px;
-}
-
-.teacher-description {
-
-
 }
 
 .teacher-description-about {
@@ -97,29 +115,37 @@
     line-height: 1.667;
     color: var(--primary-text-color);
     margin-bottom: 28px; 
-    margin-right: 0;}
-
-    @media screen and (min-width: 1343px) {
-    line-height: 2.333;  
-    font-weight: 500;
-    font-size: 12px;
-    background-color: var(--primary-text-color);
-    margin-bottom: 28px;
-    } 
     }
 
+    @include desktop-only {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.556;  
+    color: var(--primary-text-color);
+    margin-bottom: 34px;
+    } 
+    }
+        
 .teacher-description-link {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.556;
-  text-decoration-line: underline;
-  color: var(--accent-color);
-}
+    @media screen and (max-width: 1343px){
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.667;
+        text-decoration-line: underline;
+        color: var(--accent-color);
+}}
 
 
 .teacher-list-item::not(:last-child) {
- margin-bottom: 28px;
-          }
+     margin-bottom: 28px;   
+    
+    @include tablet-only {
+        margin-bottom: 40px;   
+       }
+    @include desktop-only {
+        margin-bottom: 42px;   
+       }
+}
        
        
        
@@ -141,5 +167,9 @@
     line-height: 1.214;
     letter-spacing: 0.06em;
     color: var(--primary-title-color);
+
+    @include desktop-only {
+    font-size: 16px;
+    line-height: 1.25;
+    }
    }
- 
