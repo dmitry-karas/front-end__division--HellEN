@@ -72,7 +72,9 @@
 
     }
 
-
+picture {
+    flex-shrink: 0;
+}
 .teacher-wrapper {
     @include tablet-only {
         display: flex;
@@ -166,7 +168,7 @@
     
     @include desktop-only {
         margin-right: 34px;
-        max-width: 24px;
+        width: 24px;
         height: 20px;
     }
     }
