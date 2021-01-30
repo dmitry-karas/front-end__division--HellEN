@@ -66,13 +66,13 @@
             margin-top: 24px;
         }
     }
-    .teacher-list-item::before {
-        content: "";
-        display: block;
-        width: 17px;
-        height: 14px;
+    
+    .teacher-list-item {
+        position: relative;
+        // display: inline-block;
+    
+        width: 100%;
     }
-
 
 
 .teacher-wrapper {
@@ -156,26 +156,31 @@
        }
 }
        
-       
+      
        
  .teacher-list-item-icon {
-    @media screen and (max-width: 1343px){
+        position: absolute;
+        display:inline-block;
         width: 17px;
         height: 14px;
-        margin-right: 8px;
-    }
+    
+        
+    
     @include desktop-only {
-        width: 24px;
+        max-width: 24px;
         height: 20px;
     }
     }
         
 .teacher-list-desc {
+    
+    display: inline-block;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.214;
     letter-spacing: 0.06em;
     color: var(--primary-title-color);
+    
 
     @include desktop-only {
     font-size: 16px;
