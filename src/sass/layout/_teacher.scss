@@ -133,7 +133,16 @@
         line-height: 1.667;
         text-decoration-line: underline;
         color: var(--accent-color);
-}}
+}
+
+    @include desktop-only {
+        font-size: 18px;
+        line-height: 1.556;
+        text-decoration-line: underline;
+        color: var(--accent-color);
+    }
+
+}
 
 
 .teacher-list-item::not(:last-child) {
