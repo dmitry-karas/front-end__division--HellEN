@@ -768,6 +768,7 @@ button {
 @media screen and (min-width: 1344px) {
   .problems-set {
     width: 1314px;
+    top: 348px;
     padding: 30px 80px 62px 114px;
   }
 }
