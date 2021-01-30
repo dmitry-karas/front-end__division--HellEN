@@ -3,6 +3,10 @@
   padding-bottom: 50px;
 }
 
+.feedback .container {
+  overflow: hidden;
+}
+
 .feedback .section-title {
   text-align: center;
   margin-bottom: 40px;
@@ -80,79 +84,6 @@
 .feedback-slider-dote {
   display: flex;
   justify-content: center;
-}
-
-.feedback-button {
-  display: block;
-  width: 54px;
-  height: 54px;
-
-  border-radius: 50%;
-  border: none;
-  background-size: contain;
-}
-.feedback-dote-item:nth-child(1) .feedback-button {
-  background-image: url(../images/feedback/feedback-person1.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/feedback/feedback-person1@2x.jpg);
-  }
-}
-.feedback-dote-item:nth-child(2) .feedback-button {
-  background-image: url(../images/feedback/feedback-person2.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/feedback/feedback-person2@2x.jpg);
-  }
-}
-.feedback-dote-item:nth-child(3) .feedback-button {
-  background-image: url(../images/feedback/feedback-person3.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/feedback/feedback-person3@2x.jpg);
-  }
-}
-.feedback-dote-item:nth-child(4) .feedback-button {
-  background-image: url(../images/feedback/feedback-person4.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/feedback/feedback-person4@2x.jpg);
-  }
-}
-.feedback-dote-item:nth-child(5) .feedback-button {
-  background-image: url(../images/feedback/feedback-person5.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/feedback/feedback-person5@2x.jpg);
-  }
-}
-.feedback-dote-item:nth-child(6) .feedback-button {
-  background-image: url(../images/feedback/feedback-person6.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/feedback/feedback-person6@2x.jpg);
-  }
-}
-.feedback-dote-item:nth-child(7) .feedback-button {
-  background-image: url(../images/feedback/feedback-person7.jpg);
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/feedback/feedback-person7@2x.jpg);
-  }
 }
 
 @include mobile-only {
@@ -308,5 +239,154 @@
   .arrow-right {
     top: 50%;
     right: 0;
+  }
+}
+
+.slider {
+  position: relative;
+}
+/* Слайдер */
+.slick-slider {
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slick-arrow {
+  position: absolute;
+  top: 40%;
+  font-size: 0;
+  width: 27px;
+  height: 16px;
+  z-index: 999;
+  border: none;
+  background-color: transparent;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  left: 0;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='27' height='16' viewBox='0 0 27 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M26 7C26.5523 7 27 7.44772 27 8C27 8.55228 26.5523 9 26 9V7ZM0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM26 9H1V7H26V9Z' fill='%23FF6B09'/%3e%3c/svg%3e ");
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  right: 0;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='27' height='16' viewBox='0 0 27 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM26.7071 8.70711C27.0976 8.31658 27.0976 7.68342 26.7071 7.29289L20.3431 0.928932C19.9526 0.538408 19.3195 0.538408 18.9289 0.928932C18.5384 1.31946 18.5384 1.95262 18.9289 2.34315L24.5858 8L18.9289 13.6569C18.5384 14.0474 18.5384 14.6805 18.9289 15.0711C19.3195 15.4616 19.9526 15.4616 20.3431 15.0711L26.7071 8.70711ZM1 9H26V7H1V9Z' fill='%23FF6B09'/%3e%3c/svg%3e ");
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+/* Точки (булиты) */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+}
+.slick-dots li {
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+/* Активная точка */
+.slick-dots li.slick-active {
+}
+/* Элемент точки */
+.slick-dots li button {
+  & {
+    display: block;
+    width: 54px;
+    height: 54px;
+
+    font-size: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    background-size: contain;
+  }
+}
+.slick-dots li:nth-child(1) button {
+  background-image: url(../images/feedback/feedback-person1.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/feedback/feedback-person1@2x.jpg);
+  }
+}
+.slick-dots li:nth-child(2) button {
+  background-image: url(../images/feedback/feedback-person2.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/feedback/feedback-person2@2x.jpg);
+  }
+}
+.slick-dots li:nth-child(3) button {
+  background-image: url(../images/feedback/feedback-person3.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/feedback/feedback-person3@2x.jpg);
+  }
+}
+.slick-dots li:nth-child(4) button {
+  background-image: url(../images/feedback/feedback-person4.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/feedback/feedback-person4@2x.jpg);
+  }
+}
+.slick-dots li:nth-child(5) button {
+  background-image: url(../images/feedback/feedback-person5.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/feedback/feedback-person5@2x.jpg);
+  }
+}
+.slick-dots li:nth-child(6) button {
+  background-image: url(../images/feedback/feedback-person6.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/feedback/feedback-person6@2x.jpg);
+  }
+}
+.slick-dots li:nth-child(7) button {
+  background-image: url(../images/feedback/feedback-person7.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/feedback/feedback-person7@2x.jpg);
   }
 }
