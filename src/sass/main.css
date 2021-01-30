@@ -747,7 +747,7 @@ button {
 @media screen and (min-width: 320px) {
   .problems-set {
     width: 280px;
-    top: 38%;
+    top: 206px;
     padding: 20px 14px 20px 30px;
   }
 }
@@ -760,8 +760,8 @@ button {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 688px;
-    top: 56%;
-    padding: 30px 47px 26px 96px;
+    top: 189px;
+    padding: 30px 96px 36px 76px;
   }
 }
 
@@ -769,7 +769,7 @@ button {
   .problems-set {
     width: 1314px;
     top: 348px;
-    padding: 30px 80px 62px 114px;
+    padding: 32px 74px 62px 112px;
   }
 }
 
@@ -780,18 +780,21 @@ button {
   color: var(--primary-title-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) {
   .problems-set-item {
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .problems-set-item {
     margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .problems-set-item {
-    font-size: 14px;
-    line-height: 1.71;
     margin-top: 20px;
     margin-left: 20px;
     -ms-flex-preferred-size: calc(100% / 2 - 20px);
@@ -825,19 +828,13 @@ button {
 @media screen and (min-width: 320px) {
   .problems-set-item::before {
     font-size: 14px;
-    line-height: 17px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .problems-set-item::before {
-    font-size: 20px;
     line-height: 1.2;
   }
 }
 
 @media screen and (min-width: 1344px) {
   .problems-set-item::before {
+    font-size: 20px;
     line-height: 1.65;
   }
 }
