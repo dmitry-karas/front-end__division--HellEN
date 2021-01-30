@@ -72,7 +72,7 @@
 
     }
 
-picture {
+.teacher-foto {
     flex-shrink: 0;
 }
 .teacher-wrapper {
@@ -88,7 +88,7 @@ picture {
     margin-top: 26px;
 }
 
-.teacher-img {
+.teacher-img picture {
     flex-shrink: 0;
     object-fit: cover;
     width: 244px;
