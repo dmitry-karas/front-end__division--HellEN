@@ -67,7 +67,7 @@
     }
     
     .teacher-list-item {
-        // width: 530px;
+    width: 530px;
         display: flex;
     }
 
@@ -174,7 +174,10 @@
         width: 17px;
         height: 14px;
         margin-right: 8px;
-    
+
+    @include tablet-only {
+        margin-right: 9px;
+    }
     
     @include desktop-only {
         margin-right: 34px;
