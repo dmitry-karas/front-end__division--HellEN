@@ -1,17 +1,13 @@
-body {
-  counter-reset: problem-number;
-}
-
 .problems {
   position: relative;
   background-color: var(--secondary-bg-color);
 
-  @media screen and (min-width:1344px){  
-    background-image: url("../images/icons/problems-bg-campfire.svg");
-    background-size: 455px 472px; 
+  @media screen and (min-width: 1344px) {
+    background-image: url('../images/icons/problems-bg-campfire.svg');
+    background-size: 455px 472px;
     background-repeat: no-repeat;
     background-position: 108% 200%;
-    }
+  }
 }
 
 // PROBLEMS TITLE
@@ -24,7 +20,7 @@ body {
 
   @media screen and (min-width: 768px) {
     padding: 60px 158px 177px 0px;
-  }                                                                                                                                                                                              
+  }
 
   @media screen and (min-width: 1344px) {
     padding: 100px 500px 250px 0px;
@@ -32,21 +28,21 @@ body {
 }
 
 .problems-title {
-  color:var(--secondary-title-color);
+  color: var(--secondary-title-color);
   font-weight: 800;
   letter-spacing: 0.03em;
 
-  @media screen and (min-width:320px){
+  @media screen and (min-width: 320px) {
     font-size: 20px;
     line-height: 136%;
   }
-  
-  @media screen and (min-width:768px){
+
+  @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 130%;
   }
 
-  @media screen and (min-width:1344px){
+  @media screen and (min-width: 1344px) {
     font-size: 46px;
     line-height: 130%;
   }
@@ -56,28 +52,26 @@ body {
   color: var(--accent-color);
 }
 
-
 .problems-title-mobile-block {
-  @media screen and (max-width:767px){
+  @media screen and (max-width: 767px) {
     display: block;
   }
 }
 
-.problems-title-tablet-block{
-  @media screen and (min-width:768px){
-      display: block;
+.problems-title-tablet-block {
+  @media screen and (min-width: 768px) {
+    display: block;
   }
 }
 
 .problems-content-block {
-  @media screen and (max-width:1343px){
-      display: block;
+  @media screen and (max-width: 1343px) {
+    display: block;
   }
 }
 
-
 // PROBLEMS SET
-.problems-set {  
+.problems-set {
   display: flex;
   flex-wrap: wrap;
   align-items: top;
@@ -104,70 +98,73 @@ body {
     width: 688px;
     top: 56%;
 
-    padding: 30px 47px 26px 96px;    
+    padding: 30px 47px 26px 96px;
   }
 
   @media screen and (min-width: 1344px) {
     width: 1314px;
-    top: 62%;    
+    top: 62%;
 
     padding: 30px 80px 62px 114px;
   }
 }
 
-.problems-set-item {    
-    font-style: normal;
-    font-weight: bold;
-    letter-spacing: 0.08em;
-    color: var(--primary-title-color);
+.problems-set-item {
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  color: var(--primary-title-color);
 
-    @media screen and (max-width: 767px) {
-      font-size: 14px;
-      line-height: 1.71;
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    line-height: 1.71;
 
-      margin-bottom: 10px;
-    }   
+    margin-bottom: 10px;
+  }
 
-    @media screen and (min-width: 768px) {
-      font-size: 14px;
-      line-height: 1.4;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.71;
 
-      margin-top:20px;
-      margin-left:20px;
-      flex-basis: calc(100% / 2 - 20px);
-    }
+    margin-top: 20px;
+    margin-left: 20px;
+    flex-basis: calc(100% / 2 - 20px);
+  }
 
-    @media screen and (min-width: 1344px) {
-      font-size: 20px;
-      line-height: 1.4;
+  @media screen and (min-width: 1344px) {
+    font-size: 20px;
+    line-height: 1.4;
 
-      margin-top:40px;
-      margin-left:40px;
-      flex-basis: calc(100% / 3 - 40px);
-    }
+    margin-top: 40px;
+    margin-left: 40px;
+    flex-basis: calc(100% / 3 - 40px);
+  }
 }
 
 .problems-set-item::before {
-    display: block;
-    content: "";
-    margin-bottom: 5px; 
-    color: var(--accent-color);
+  display: block;
+  content: '';
+  margin-bottom: 5px;
+  color: var(--accent-color);
 
-    font-style: normal;
-    font-weight: bold;
-    letter-spacing: 0.08em;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.08em;
 
-    @media screen and (min-width:320px){
-      font-size: 14px;
-      line-height: 17px;
-    }
-
-    @media screen and (min-width:1344px){
-      font-size: 20px;
-      line-height: 1.65; 
-    } 
-
-    counter-increment: problem-number;
-    content: "— 0" counter(problem-number) " ";
+  @media screen and (min-width: 320px) {
+    font-size: 14px;
+    line-height: 17px;
   }
 
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: 1344px) {
+    line-height: 1.65;
+  }
+
+  counter-increment: problem-number;
+  content: '— 0' counter(problem-number);
+}
