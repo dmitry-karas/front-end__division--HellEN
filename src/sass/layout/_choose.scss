@@ -1,7 +1,8 @@
 .choose {
   position: absolute;
-  top: 1645px;
-  left: 20px;
+  top: -387px;
+  left: 50%;
+  transform: translateX(-50%);
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 30px;
@@ -10,13 +11,24 @@
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 
+.choose-container {
+  position: relative;
+}
+
 .choose-title {
   /* помістити вище секції на 30px */
   position: absolute;
   bottom: 100%;
+  width: 180px;
   padding-bottom: 30px;
+  left: 0px;
   margin: 0px;
   color: rgb(255, 255, 255);
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 136%;
 }
 
 .choose-list {
@@ -54,16 +66,14 @@
 
 @media screen and (min-width: 768px) {
   .choose {
-    top: 1213px;
-    left: 0;
+    top: -140px;
     padding: 0;
-    margin-left: 40px;
-    margin-right: 40px;
     padding-top: 30px;
     padding-bottom: 25px;
   }
 
   .choose-list {
+    width: 688px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -72,32 +82,42 @@
   }
 
   .choose-title {
-    left: 199px;
+    width: 370px;
+    left: 177px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 130%;
   }
 
   .choose-list-item {
     margin-bottom: 30px;
+    margin-right: 20px;
 
     &:nth-child(n + 5) {
       margin-bottom: 0px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
     }
   }
 }
 
 @media screen and (min-width: 1344px) {
   .choose {
-    top: 1038px;
-    left: 0;
+    top: -194px;
     padding: 0;
     padding-top: 70px;
     padding-bottom: 70px;
     padding-left: 84px;
     padding-right: 82px;
-    margin: 0;
     width: 1314px;
   }
 
   .choose-list {
+    width: 1148px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -108,6 +128,7 @@
     width: 356px;
     margin-bottom: 0;
     margin-left: 40px;
+    margin-right: 0;
 
     &:nth-child(n + 4) {
       margin-top: 32px;
