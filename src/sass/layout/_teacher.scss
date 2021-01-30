@@ -1,6 +1,5 @@
-.teacher {
+.teacher { 
     padding-top: 40px;
-    padding-bottom: 26px;
 }
 
 .teacher-title {
@@ -68,14 +67,16 @@
     }
     
     .teacher-list-item {
+        // width: 530px;
         display: flex;
-
     }
 
 .teacher-foto {
+    padding-bottom: 0;
     flex-shrink: 0;
 }
 .teacher-wrapper {
+    
     @include tablet-only {
         display: flex;
     } 
@@ -86,9 +87,10 @@
 
 .teacher-list {
     margin-top: 26px;
+
 }
 
-.teacher-img picture {
+.teacher-img {
     flex-shrink: 0;
     object-fit: cover;
     width: 244px;
@@ -100,47 +102,55 @@
         width: 244px;
         height: 344px;
         margin-right: 40px;
-        
     } 
     @include desktop-only {  
         width: 530px;
         height: 667px;
         margin-right: 30px;
+        padding-bottom: 0;
     }
 }
 
 .teacher-description-about {
-    @media screen and (max-width: 1343px){
     font-weight: 500;
     font-size: 12px;
     line-height: 1.667;
     color: var(--primary-text-color);
     margin-bottom: 28px; 
-    }
+    width: 280px;
 
+
+ @include tablet-only {
+     width: 402px;
+ }
     @include desktop-only {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.556;  
     color: var(--primary-text-color);
     margin-bottom: 34px;
+    width: 641px;
     } 
     }
-        
+
+.teacher-description-about:not(:last-child) {
+     margin-bottom: 28px;   
+    
+    @include desktop-only {
+        margin-bottom: 34px;   
+       }
+}    
 .teacher-description-link {
-    @media screen and (max-width: 1343px){
         font-weight: 500;
         font-size: 12px;
         line-height: 1.667;
         text-decoration-line: underline;
         color: var(--accent-color);
-    }
 
     @include desktop-only {
         font-size: 18px;
         line-height: 1.556;
-        text-decoration-line: underline;
-        color: var(--accent-color);
+       
     }
 }
 
@@ -149,10 +159,10 @@
      margin-bottom: 28px;   
     
     @include tablet-only {
-        margin-bottom: 40px;   
+        margin-bottom: 28px;   
        }
     @include desktop-only {
-        margin-bottom: 40px;   
+        margin-bottom: 34px;   
        }
 }
        
@@ -174,13 +184,13 @@
     }
         
 .teacher-list-desc { 
-    display: inline-block;
+    
     font-weight: 600;
     font-size: 14px;
     line-height: 1.214;
     letter-spacing: 0.06em;
     color: var(--primary-title-color);
-    
+
 
     @include desktop-only {
     font-size: 16px;
