@@ -52,24 +52,24 @@ body {
   }
 }
 
-.problems-title--orange {
+.problems-title-orange {
   color: var(--accent-color);
 }
 
 
-.problems-title-mobile--block {
+.problems-title-mobile-block {
   @media screen and (max-width:767px){
     display: block;
   }
 }
 
-.problems-title-tablet--block{
+.problems-title-tablet-block{
   @media screen and (min-width:768px){
       display: block;
   }
 }
 
-.problems-content--block {
+.problems-content-block {
   @media screen and (max-width:1343px){
       display: block;
   }
@@ -80,7 +80,8 @@ body {
 .problems-set {  
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: top;
+
   position: absolute;
 
   background: var(--primary-bg-color);
@@ -97,19 +98,16 @@ body {
   }
 
   @media screen and (min-width: 768px) {
-    width: 688px;
-    top: 56%;
-
     display: flex;
     flex-wrap: wrap;
+
+    width: 688px;
+    top: 56%;
 
     padding: 30px 47px 26px 96px;    
   }
 
   @media screen and (min-width: 1344px) {
-    display: flex;
-    flex-wrap: wrap;
-
     width: 1314px;
     top: 62%;    
 
@@ -149,20 +147,6 @@ body {
     }
 }
 
-.problems-set-item:first-child{
-  @media screen and (max-width: 1343px) and (min-width:768) {
-    margin-top:0px;
-    margin-left:20px;
-    flex-basis: calc(100% / 2 - 20px);
-  }
-
-  @media screen and (min-width: 1344px) {
-    margin-top:0px;
-    margin-left:40px;
-    flex-basis: calc(100% / 3 - 40px);
-  }
-}
-
 .problems-set-item::before {
     display: block;
     content: "";
@@ -180,7 +164,7 @@ body {
 
     @media screen and (min-width:1344px){
       font-size: 20px;
-      line-height: 1.65;      
+      line-height: 1.65; 
     } 
 
     counter-increment: problem-number;
