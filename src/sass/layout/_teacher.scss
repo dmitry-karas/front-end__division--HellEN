@@ -69,8 +69,7 @@
     
     .teacher-list-item {
         display: flex;
-    padding-top: 26px;
-   
+
     }
 
 
@@ -84,15 +83,16 @@
 }
 
 .teacher-list {
-    margin-top: 0;
+    margin-top: 26px;
 }
 
 .teacher-img {
+    flex-shrink: 0;
     object-fit: cover;
     width: 244px;
     height: 344px;
     padding-bottom: 20px;
-    padding-left: 0;
+    
 
     @include tablet-only {
         width: 244px;
@@ -143,14 +143,14 @@
 }
 
 
-.teacher-list-item::not(:last-child) {
+.teacher-list-item:not(:last-child) {
      margin-bottom: 28px;   
     
     @include tablet-only {
         margin-bottom: 40px;   
        }
     @include desktop-only {
-        margin-bottom: 42px;   
+        margin-bottom: 40px;   
        }
 }
        
@@ -163,9 +163,9 @@
         height: 14px;
         margin-right: 8px;
     
-        
     
     @include desktop-only {
+        margin-right: 34px;
         max-width: 24px;
         height: 20px;
     }
