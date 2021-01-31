@@ -5,7 +5,8 @@
   background-image: url(../images/registration/registration-bg-mob.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 320px 507px;
+  //   background-size: 320px 507px;
+  background-size: cover;
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -17,9 +18,9 @@
 
   background-color: var(--secondary-bg-color);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 321px) {
     background-image: url(../images/registration/registration-bg-tab.png);
-    background-size: auto;
+    // background-size: auto;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -29,9 +30,9 @@
     }
   }
 
-  @media screen and (min-width: 1344px) {
+  @media screen and (min-width: 769px) {
     background-image: url(../images/registration/registration-bg-desk.png);
-    background-size: 1680px 840px;
+    // background-size: 1680px 840px;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
