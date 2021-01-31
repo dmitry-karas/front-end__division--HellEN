@@ -3,7 +3,7 @@
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({ scrollTop: top }, 800);
+        $('body,html').animate({ scrollTop: top }, 1000);
         
         
          $('.menu a').on('click', function () {
