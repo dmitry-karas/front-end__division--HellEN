@@ -117,27 +117,25 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/menu.js":[function(require,module,exports) {
-(function () {
-  var menuBtnRef = document.querySelector("[data-menu-button]");
-  var mobileMenuRef = document.querySelector("[data-menu]");
-  var logoRef = document.querySelector("[data-logo]");
-  menuBtnRef.addEventListener("click", function () {
-    var expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-    menuBtnRef.classList.toggle("is-open");
-    menuBtnRef.setAttribute("aria-expanded", !expanded);
-    mobileMenuRef.classList.toggle("is-open");
-    logoRef.classList.toggle("logo-dark-theme");
-    document.body.classList.toggle("menu-open"); //  remove classes
+})({"js/back2top.js":[function(require,module,exports) {
+$(window).scroll(function () {
+  var height = $(window).scrollTop();
 
-    $('.header-menu a').on('click', function () {
-      $('.button-burger').removeClass('is-open');
-      $('.header-menu').removeClass('is-open');
-      $('body').removeClass('menu-open');
-      $('.logo').removeClass('logo-dark-theme');
-    });
+  if (height > 100) {
+    $('.top-button').fadeIn();
+  } else {
+    $('.top-button').fadeOut();
+  }
+});
+$(document).ready(function () {
+  $('.top-button').click(function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0
+    }, 'slow');
+    return false;
   });
-})();
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -166,7 +164,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64365" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51141" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -342,5 +340,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/menu.js"], null)
-//# sourceMappingURL=/menu.0c91648c.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/back2top.js"], null)
+//# sourceMappingURL=/back2top.52479137.js.map
