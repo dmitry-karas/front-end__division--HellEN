@@ -100,14 +100,21 @@
   color: var(--secondary-title-color);
   background: transparent;
 
-  transform: border-color 250ms linear;
+  transition: border-color 250ms var(--timing-function);
 
   &::placeholder {
     color: var(--secondary-title-color);
+
+    transition: color 250ms var(--timing-function);
   }
+
   &:hover,
   &:focus {
     border-color: var(--accent-color);
+
+    &::placeholder {
+      color: var(--accent-color);
+    }
   }
 }
 
