@@ -146,13 +146,30 @@
       position: absolute;
       left: -1px;
       top: 10px;
-      height: 721px;
+      height: 708px;
       border-left: 1px solid var(--secondary-title-color);
     }
+  }
+  .program-item-title::before {
+    content: '';
+    position: absolute;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    left: -62px;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
   }
 
   .program-semestry {
     display: flex;
+  }
+  .program-item {
+    margin-left: 56px;
+  }
+  .program-semestry-text.width-text {
+    width: 176px;
   }
 
   .program-item:nth-child(-n + 4) {

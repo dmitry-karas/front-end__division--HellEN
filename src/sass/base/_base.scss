@@ -8,6 +8,7 @@
 
 body {
   font-family: Montserrat, sans-serif;
+  counter-reset: problem-number;
 
   &.modal-open,
   &.menu-open {
