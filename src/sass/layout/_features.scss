@@ -1,3 +1,20 @@
+.features {
+  @include mobile-only {
+    padding-top: 198px;
+    padding-bottom: 50px;
+  }
+
+  @include tablet-only {
+    padding-top: 202px;
+    padding-bottom: 50px;
+  }
+
+  @include desktop-only {
+    padding-top: 280px;
+    padding-bottom: 130px;
+  }
+}
+
 .features-title {
   font-weight: 800;
   line-height: 1.3;
