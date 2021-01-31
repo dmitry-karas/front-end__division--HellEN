@@ -1,0 +1,188 @@
+.overlay {
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url(../images/registration/registration-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 320px 507px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .overlay {
+      background-image: url(../images/registration/registration-bg-mob@2x.png);
+    }
+  }
+
+  background-color: var(--secondary-bg-color);
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/registration/registration-bg-tab.png);
+    background-size: auto;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .overlay {
+        background-image: url(../images/registration/registration-bg-tab@2x.png);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1344px) {
+    background-image: url(../images/registration/registration-bg-desk.png);
+    background-size: 1680px 840px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .overlay {
+        background-image: url(../images/registration/registration-bg-desk@2x.png);
+      }
+    }
+  }
+}
+
+.form {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-title {
+  margin-bottom: 30px;
+
+  .form & {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.36;
+    font-style: normal;
+
+    color: var(--secondary-title-color);
+  }
+
+  &-accent {
+    color: var(--accent-color);
+  }
+}
+
+.form-deskription {
+  margin-bottom: 30px;
+
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.219;
+  letter-spacing: 0.08em;
+  word-spacing: 0.03em;
+  font-style: normal;
+
+  color: var(--secondary-title-color);
+}
+
+.input {
+  &:first-of-type {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 15px 48px;
+  border: 1px solid var(--secondary-title-color);
+  outline: none;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.219;
+  letter-spacing: 0.08em;
+  font-style: normal;
+
+  color: var(--secondary-title-color);
+  background: transparent;
+  &::placeholder {
+    color: var(--secondary-title-color);
+  }
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    &::placeholder {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.registration .button {
+  display: block;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    padding-bottom: 71px;
+  }
+  .form .section-title {
+    font-size: 26px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+  }
+
+  .form-deskription {
+    margin-bottom: 40px;
+
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    word-spacing: 0.08em;
+  }
+
+  .form-input {
+    max-width: 390px;
+    height: 48px;
+    padding: 15px 28px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .registration .button {
+    margin-top: 31px;
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .form {
+    padding-top: 100px;
+    padding-bottom: 62px;
+  }
+
+  .form .section-title {
+    display: block;
+    width: 1090px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    font-size: 46px;
+  }
+
+  .form-deskription {
+    margin-bottom: 56px;
+    font-size: 30px;
+  }
+
+  .input {
+    &:first-of-type {
+      margin-bottom: 30px;
+    }
+  }
+
+  .form-input {
+    max-width: 478px;
+    height: 70px;
+  }
+
+  .registration .button {
+    margin-top: 80px;
+  }
+}
