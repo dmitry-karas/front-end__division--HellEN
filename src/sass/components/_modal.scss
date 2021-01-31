@@ -64,6 +64,8 @@
 }
 
 .modal-title-icon {
+  fill-opacity: 0.8;
+
   @include tablet-only {
     width: 36px;
     height: 44px;
@@ -144,10 +146,6 @@
   border-radius: 4px;
 
   font-size: 14px;
-  //   line-height: 1.14;
-  //   letter-spacing: 0.01em;
-
-  //   color: var(--primary-text-color);
 
   transition: border-color 250ms var(--timing-function);
 
@@ -160,26 +158,6 @@
     border-color: var(--accent-color);
   }
 }
-
-// .modal-form-textarea {
-//   height: 120px;
-//   padding-right: 16px;
-//   padding-left: 16px;
-//   margin-bottom: 20px;
-//   border-radius: 10px;
-
-//   @include mobile-only {
-//     height: 80px;
-//   }
-
-//   &::placeholder {
-//     font-size: 12px;
-//     line-height: 1.16;
-//     letter-spacing: 0.01em;
-
-//     color: rgba(117, 117, 117, 0.5);
-//   }
-// }
 
 .modal-input-icon {
   position: absolute;
@@ -194,60 +172,6 @@
     color: var(--accent-color);
   }
 }
-
-// .modal-form-checkbox {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin-bottom: 30px;
-// }
-
-// .modal-form-checkbox-label {
-//   display: flex;
-//   align-items: center;
-
-//   letter-spacing: 0.03em;
-
-//   color: var(--primary-text-color);
-
-//   @include mobile-only {
-//     font-size: 11px;
-//   }
-
-//   @include tablet-only {
-//     font-size: 12px;
-//     line-height: 1.16;
-//   }
-//   @include desktop-only {
-//     font-size: 14px;
-//     line-height: 1.71;
-//   }
-// }
-
-// .modal-check-icon {
-//   min-width: 16px;
-//   min-height: 15px;
-//   margin-right: 8px;
-//   border: 2px solid #000;
-//   border-radius: 2px;
-//   color: #fff;
-//   fill: currentColor;
-
-//   transition: background-color 250ms var(--timing-function),
-//     border-color 250ms var(--timing-function);
-
-//   .modal-form-checkbox-input:checked + & {
-//     border: none;
-//     background-color: var(--accent-color);
-//   }
-// }
-
-// .modal-agreement-link {
-//   display: contents;
-//   text-decoration: underline;
-//   text-decoration-skip-ink: none;
-//   color: var(--accent-color);
-// }
 
 // ========== MODAL BUTTONS ==========
 

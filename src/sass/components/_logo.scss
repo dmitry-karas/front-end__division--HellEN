@@ -33,6 +33,16 @@
     height: 20px;
     margin-bottom: 3px;
   }
+
+  &.shake-opacity {
+    animation-duration: 0s;
+    animation-timing-function: ease-in;
+
+    .logo:hover &,
+    .logo:focus & {
+      animation-duration: 1500ms;
+    }
+  }
 }
 
 .logo-undertitle {
