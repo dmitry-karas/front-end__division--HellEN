@@ -104,7 +104,7 @@
 .teacher-img {
     flex-shrink: 0;
     object-fit: cover;
-    width: 244px;
+    width: 243px;
     height: 344px;
     padding-bottom: 20px;
     
@@ -129,7 +129,6 @@
     color: var(--primary-text-color); 
     width: 279px;
 
-
  @include tablet-only {
      width: 402px;
  }
@@ -138,7 +137,7 @@
     font-size: 18px;
     line-height: 1.556;  
     color: var(--primary-text-color);
-    margin-bottom: 34px;
+
     width: 641px;
     } 
     }
@@ -153,22 +152,26 @@
   
 
 .teacher-description-link {
+
+    display: inline-block;
+    margin-top: 20px;
         font-weight: 500;
         font-size: 12px;
         line-height: 1.667;
         text-decoration-line: underline;
         color: var(--accent-color);
-        
+
+        @include tablet-only {
+            margin-top: 22px;   
+           }
 
     @include desktop-only {
+    margin-top: 34px;   
         font-size: 18px;
         line-height: 1.556;
-       
     }
 }
-.teacher-link {
-margin-top: 20px;
-}
+
 
 
 
@@ -201,7 +204,7 @@ margin-top: 20px;
     }
         
 .teacher-list-desc { 
-    width: 253px;
+    
     font-weight: 600;
     font-size: 14px;
     line-height: 1.214;
