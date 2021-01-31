@@ -56,16 +56,17 @@
 
 .hero-title {
   margin-bottom: 30px;
-
+  font-size: 20px;
   @include tablet-only {
     width: 300px;
+    font-size: 26px;
   }
 
   @include desktop-only {
     width: 640px;
     margin-bottom: 24px;
 
-    font-size: 58px;
+    font-size: 46px;
   }
 }
 
