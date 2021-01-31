@@ -1,7 +1,8 @@
 .choose {
   position: absolute;
   top: -387px;
-  left: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 30px;
@@ -66,10 +67,7 @@
 @media screen and (min-width: 768px) {
   .choose {
     top: -140px;
-    left: 0;
     padding: 0;
-    margin-left: 40px;
-    margin-right: 40px;
     padding-top: 30px;
     padding-bottom: 25px;
   }
@@ -85,7 +83,7 @@
 
   .choose-title {
     width: 370px;
-    left: 199px;
+    left: 177px;
 
     font-style: normal;
     font-weight: 800;
@@ -110,13 +108,11 @@
 @media screen and (min-width: 1344px) {
   .choose {
     top: -194px;
-    left: 0;
     padding: 0;
     padding-top: 70px;
     padding-bottom: 70px;
     padding-left: 84px;
     padding-right: 82px;
-    margin: 0;
     width: 1314px;
   }
 
