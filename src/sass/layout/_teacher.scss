@@ -1,8 +1,12 @@
 .teacher {
-  padding-top: 40px;
+  @include mobile-only {
+    padding-top: 280px;
+    padding-bottom: 50px;
+  }
 
   @include tablet-only {
     padding-top: 302px;
+    padding-bottom: 50px;
   }
 }
 
