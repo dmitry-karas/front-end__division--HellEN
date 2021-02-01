@@ -44,6 +44,12 @@
   left: -8px;
 }
 
+@media screen and (max-width: 767px) {
+  .quarantee {
+    background-image: linear-gradient(to bottom, #fff 63px, #f1f1f1 0);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .quarantee-list-box {
     background-color: #fff;
