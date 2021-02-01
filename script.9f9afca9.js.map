@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/script.js"],"names":["$","document","ready","slick","dots","slidesToShow"],"mappings":";AAAAA,EAAEC,UAAUC,MAAM,WAChBF,EAAE,WAAWG,MAAM,CACjBC,MAAM,EACNC,aAAc","file":"script.9f9afca9.js","sourceRoot":"../src","sourcesContent":["$(document).ready(function(){\n  $('.slider').slick({\n    dots: true,\n    slidesToShow: 1,\n  });\n});"]}
