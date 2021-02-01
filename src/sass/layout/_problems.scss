@@ -2,11 +2,22 @@
   position: relative;
   background-color: var(--secondary-bg-color);
 
+  @include mobile-only {
+    padding-top: 50px;
+  }
+
+  @include tablet-only {
+    padding-top: 60px;
+  }
+
+  @include desktop-only {
+    padding-top: 100px;
+  }
+
   @media screen and (min-width: 1344px) {
     background-image: url('../images/icons/problems-bg-campfire.svg');
-    background-size: 455px 472px;
     background-repeat: no-repeat;
-    background-position: 108% 200%;
+    background-position: 104% 88px;
   }
 }
 
@@ -15,15 +26,20 @@
   position: relative;
 
   @media screen and (min-width: 320px) {
-    padding: 51px 20px 366px 0px;
+    // padding: 51px 20px 350px 0px;
+    padding-right: 20px;
+    padding-bottom: 352px;
   }
 
   @media screen and (min-width: 768px) {
-    padding: 60px 158px 177px 0px;
+    // padding: 60px 158px 177px 0px;
+
+    // padding-right: 158px;
+    padding-bottom: 178px;
   }
 
   @media screen and (min-width: 1344px) {
-    padding: 100px 500px 250px 0px;
+    padding: 0 0 282px 0px;
   }
 }
 
@@ -86,7 +102,7 @@
 
   @media screen and (min-width: 320px) {
     width: 280px;
-    top: 206px;
+    top: 156px;
 
     padding: 20px 14px 20px 30px;
   }
@@ -96,16 +112,16 @@
     flex-wrap: wrap;
 
     width: 688px;
-    top: 189px;
+    top: 128px;
 
-    padding: 30px 96px 36px 76px;
+    padding: 0 68px 26px 68px;
   }
 
   @media screen and (min-width: 1344px) {
     width: 1314px;
-    top:348px;
+    top: 248px;
 
-    padding: 32px 74px 62px 112px;
+    padding: 30px 112px 62px 74px;
   }
 }
 
@@ -121,13 +137,15 @@
   }
 
   @media screen and (max-width: 767px) {
-    margin-bottom: 10px;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
   }
 
   @media screen and (min-width: 768px) {
-      margin-top: 20px;
-    margin-left: 20px;
-    flex-basis: calc(100% / 2 - 20px);
+    margin-top: 28px;
+    margin-left: 28px;
+    flex-basis: calc(100% / 2 - 28px);
   }
 
   @media screen and (min-width: 1344px) {
@@ -143,7 +161,7 @@
 .problems-set-item::before {
   display: block;
   content: '';
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: var(--accent-color);
 
   font-style: normal;

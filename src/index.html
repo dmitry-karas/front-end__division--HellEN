@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hell EN</title>
+    <title>HellEN</title>
+    <link rel="icon" type="image/svg" href="./images/icons/favicon.svg" />
 
     <!-- Fonts -->
 
@@ -21,6 +22,20 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+
+    <!-- Animations -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.3/csshake.min.css"
+      integrity="sha512-RliK2gk03WxUELn57ddjWLhEfhUiOZ85VvWLImFy8A7FOPMkF4Z9YGQ3VKX5jpwkEerAL6I0nC+JNeCPrxWBTw=="
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
@@ -35,33 +50,28 @@
     <include src="./partials/quarantee.html"></include>
     <include src="./partials/feedback.html"></include>
     <include src="./partials/registration.html"></include>
-    <include src="./partials/modal.html"></include>
     <include src="./partials/footer.html"></include>
+    <include src="./partials/modal.html"></include>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.5.0.js"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="./index.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/top-button.js"></script>
-
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script type="text/javascript" src="./js/slick.min.js"></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
     <script src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

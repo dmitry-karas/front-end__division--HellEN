@@ -1,179 +1,139 @@
-.footer {
-  text-decoration: none;
-}
-
-.footer-first {
+.footer-top-side {
   @include mobile-only {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
-  @include tablet-only {
+  @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+  }
+
+  @include tablet-only {
     padding-top: 40px;
     padding-bottom: 40px;
   }
 
   @include desktop-only {
-    display: flex;
-    padding-top: 53px;
-    padding-bottom: 53px;
+    padding-top: 52px;
+    padding-bottom: 52px;
   }
 }
 
-.right-block {
-  display: flex;
+.logo-footer {
   @include mobile-only {
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 20px;
   }
 
   @include tablet-only {
-    align-items: center;
+    margin-right: auto;
   }
 
   @include desktop-only {
-    align-items: center;
-    margin-left: 290px;
+    margin-right: 290px;
   }
 }
 
-.phone-footer {
-  margin-right: 10px;
-  @include mobile-only {
+.footer-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: var(--primary-title-color);
+
+  animation-duration: 1250ms;
+  transition: transform 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
   }
+
+  @include mobile-only {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 48px;
+
+    @include tablet-only {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    @include desktop-only {
+      font-size: 30px;
+      line-height: 1.23;
+    }
+  }
+}
+
+.footer-phone-icon {
+  margin-right: 10px;
+
+  animation-duration: 0ms;
 
   @include tablet-only {
     width: 24px;
-    height: 23px;
+    height: 24px;
   }
 
   @include desktop-only {
     margin-right: 15px;
     width: 30px;
-    height: 28px;
+    height: 30px;
+  }
+
+  &.shake {
+    animation-duration: 0s;
+    animation-timing-function: ease-in;
+
+    .footer-phone:hover &,
+    .footer-phone:focus & {
+      animation-duration: 3000ms;
+    }
   }
 }
 
-.phone-block {
-  display: flex;
-  align-items: baseline;
-  @include mobile-only {
-    margin-bottom: 30px;
-  }
-
-  @include tablet-only {
-  }
-
-  @include desktop-only {
-  }
-}
-
-.number-footer {
-  color: #111518;
-  display: flex;
-  align-items: center;
-
-  @include mobile-only {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.08em;
-  }
-
-  @include tablet-only {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.08em;
-  }
-
-  @include desktop-only {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 37px;
-    letter-spacing: 0.08em;
-  }
-}
-
-.insta-footer-link {
-  display: inline-flex;
+.footer-instagram {
+  position: relative;
+  display: inline-block;
   width: 40px;
   height: 40px;
-  background-image: url('/images/icons/instagram.svg');
+  background-image: url(../images/icons/instagram.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  @include mobile-only {
-  }
+  background-position: center;
 
-  @include tablet-only {
-    margin-left: 48px;
-  }
+  @media screen and (min-width: 768px) {
+    &::before {
+      @include pseudo;
+      top: 0;
+      left: -24px;
+      width: 1px;
+      height: 40px;
 
-  @include desktop-only {
-    margin-left: 40px;
-  }
-}
-
-.insta-footer-link::before {
-  content: '';
-
-  @include mobile-only {
-  }
-
-  @include tablet-only {
-    border-left: 1px solid #b9b9b9;
-    position: relative;
-    right: 24px;
-  }
-
-  @include desktop-only {
-    border-left: 1px solid #b9b9b9;
-    position: relative;
-    right: 24px;
+      background-color: var(--primary-text-color);
+    }
   }
 }
 
-.page-footer-second {
-  background-color: var(--footersecond-bg-color);
+.footer-bottom-side {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background-color: var(--secondary-bg-color);
 }
 
-.footer-second {
-  width: 100%;
-  height: 70px;
-  display: flex;
-
-  @include mobile-only {
-    justify-content: center;
-    padding: 21px;
-  }
-
-  @include tablet-only {
-    align-items: center;
-  }
-
-  @include desktop-only {
-    align-items: center;
-  }
-}
-
-.footer-header {
-  color: #b9b9b9;
-  display: flex;
+.footer-copyright {
   font-weight: 500;
   font-size: 14px;
-  line-height: 28px;
+  line-height: 2;
+  color: var(--primary-text-color);
 
   @include mobile-only {
-  }
-
-  @include tablet-only {
-  }
-
-  @include desktop-only {
+    text-align: center;
   }
 }

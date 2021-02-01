@@ -3,6 +3,10 @@
   padding-bottom: 50px;
 }
 
+.advantages-item {
+  animation-duration: 1500ms;
+}
+
 .advantages-svg {
   position: relative;
   @include flex-centered;
