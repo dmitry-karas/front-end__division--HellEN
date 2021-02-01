@@ -13,8 +13,9 @@
   animation-duration: 2000ms;
   transition: transform 250ms var(--timing-function);
 
-  &:hover {
-    transform: scale(1.2);
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
   }
 
   @media screen and (max-width: 767px) {
@@ -78,30 +79,6 @@
 
     &-accent {
       color: var(--accent-color);
-    }
-  }
-}
-
-.logo-undertitle-accent-footer {
-  @media screen and (max-width: 767px) {
-    font-size: 5px;
-  }
-
-  @media screen and (min-width: 768px) {
-    font-size: 8px;
-    letter-spacing: 0.18em;
-    color: var(--accent-color);
-  }
-}
-
-.logo-icon-footer {
-  &.shake-opacity {
-    animation-duration: 0s;
-    animation-timing-function: ease-in;
-
-    .logo-footer:hover &,
-    .logo-footer:focus & {
-      animation-duration: 2000ms;
     }
   }
 }
