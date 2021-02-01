@@ -78,7 +78,10 @@
 
 .program-semestry-item {
   text-align: center;
-  margin-top: 8px;
+
+  @include mobile-only {
+    margin-top: 8px;
+  }
 }
 .program-semestry-item:first-child {
   margin-top: 0;
@@ -117,7 +120,7 @@
   .program {
     height: 1355px;
     padding-bottom: 392px;
-    background-position: calc(50% + 192px) 820px;
+    background-position: calc(50% + 192px) 790px;
     background-repeat: no-repeat;
     background-image: url('../images/program/program-bg-tab.png');
     background-size: 384px 280px;
@@ -146,7 +149,7 @@
       position: absolute;
       left: -1px;
       top: 10px;
-      height: 708px;
+      height: 690px;
       border-left: 1px solid var(--secondary-title-color);
     }
   }
