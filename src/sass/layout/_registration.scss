@@ -5,15 +5,12 @@
   background-image: url(../images/registration/registration-bg-mob.png);
   background-repeat: no-repeat;
   background-position: center;
-  //   background-size: 320px 507px;
   background-size: cover;
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .overlay {
-      background-image: url(../images/registration/registration-bg-mob@2x.png);
-    }
+    background-image: url(../images/registration/registration-bg-mob@2x.png);
   }
 
   background-color: var(--secondary-bg-color);
@@ -24,9 +21,7 @@
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      .overlay {
-        background-image: url(../images/registration/registration-bg-tab@2x.png);
-      }
+      background-image: url(../images/registration/registration-bg-tab@2x.png);
     }
   }
 
@@ -36,9 +31,7 @@
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      .overlay {
-        background-image: url(../images/registration/registration-bg-desk@2x.png);
-      }
+      background-image: url(../images/registration/registration-bg-desk@2x.png);
     }
   }
 }

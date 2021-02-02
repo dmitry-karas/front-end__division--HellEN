@@ -46,10 +46,11 @@
   color: var(--primary-title-color);
 
   animation-duration: 1250ms;
-  transition: transform 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), transform 250ms var(--timing-function);
 
   &:hover,
   &:focus {
+    color: var(--accent-color);
     transform: scale(1.1);
   }
 
