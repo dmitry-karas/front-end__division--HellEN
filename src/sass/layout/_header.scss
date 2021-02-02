@@ -202,7 +202,7 @@
 }
 
 .site-nav-link {
-  display: block;
+  display: inline-block;
 
   transition: color 250ms var(--timing-function);
 
@@ -212,6 +212,10 @@
     line-height: 1.8;
     letter-spacing: 0.03em;
     color: var(--secondary-title-color);
+  }
+
+  @include tablet-only {
+    font-size: 26px;
   }
 
   @include desktop-only {

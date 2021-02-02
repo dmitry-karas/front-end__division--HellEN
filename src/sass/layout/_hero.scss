@@ -40,8 +40,8 @@
     padding-top: 125px;
     overflow: hidden;
 
-    background-position: calc(50% + 380px) 50px, -30px -40px;
-    background-size: 842px 718px, 100% 878px;
+    background-position: calc(50% + 380px) 50px, -30px -60px;
+    background-size: 842px 718px, calc(100% + 60px) 878px;
     background-image: url(../images/hero/hero-desk.png),
       url(../images/hero/hero-bg-desk.png);
 

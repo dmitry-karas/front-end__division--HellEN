@@ -50,7 +50,7 @@
   z-index: 999;
   display: none;
   position: fixed;
-  bottom: 50px;
+  bottom: 20px;
   background-color: transparent;
   color: rgba(255, 107, 9, 0.4);
   border: 2px solid rgba(255, 107, 9, 0.4);
@@ -80,10 +80,10 @@
 
   @include desktop-only {
     right: calc(50% - 350px - 20%);
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
 
-    font-size: 50px;
+    font-size: 65px;
   }
 
   &:hover {
