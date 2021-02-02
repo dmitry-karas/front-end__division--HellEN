@@ -476,7 +476,7 @@ textarea {
 }
 
 .site-nav-link {
-  display: inline-block;
+  display: block;
   transition: color 250ms var(--timing-function);
 }
 @media screen and (max-width: 1343px) {
