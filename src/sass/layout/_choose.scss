@@ -9,6 +9,9 @@
   padding-right: 34px;
   background: #ffffff;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  animation-duration: 500ms;
+  transition: transform 500ms var(--timing-function);
 }
 
 .choose-container {
