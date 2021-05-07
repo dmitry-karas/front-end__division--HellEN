@@ -47,6 +47,9 @@
   position: relative;
   text-align: center;
   margin-left: 26px;
+
+  animation-duration: 500ms;
+  transition: transform 250ms var(--timing-function);
 }
 
 .program-item:nth-child(-n + 4) {
